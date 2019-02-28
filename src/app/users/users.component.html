@@ -1,8 +1,8 @@
 <h1>Class of 2005</h1>
 
-<ul>
+<ul [@listStagger]="users$">
   <li *ngFor="let user of users$">
-    <a routerLink="../details/{{user.id}}">{{ user.name }}</a>
+    <a routerLink="/details/{{user.id}}">{{ user.name }}</a>
 
     <ul>
       <li>{{ user.email }}</li>
